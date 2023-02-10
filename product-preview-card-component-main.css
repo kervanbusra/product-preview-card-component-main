@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container_item {
+  max-width: 100%;
+  padding: 20px;
+}
+.header {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+}
+
+.header_item {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.paragraf {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.price {
+  display: flex;
+  margin: 20px 0;
+}
+.price__item {
+  color: hsl(158, 36%, 37%);
+  font-size: xx-large;
+  font-weight: 700;
+  position: relative;
+}
+.price__item2 {
+  text-decoration: line-through;
+  color: black;
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  top: 10px;
+  right: -80px;
+}
+input {
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  color: aliceblue;
+  font-weight: 700;
+  font-size: medium;
+  border-radius: 10px;
+  padding: 15px 0;
+  border-style: none;
+}
+
+@media screen and (min-width: 400px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 771px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    width: 800px;
+  }
+  img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    width: 720px;
+  }
+
+  img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    width: 100%;
+  }
+}
